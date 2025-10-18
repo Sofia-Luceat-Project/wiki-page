@@ -20,7 +20,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install mkdocs mkdocs-material ghp-import
+          pip install mkdocs mkdocs-material ghp-import git-revision-date-localized
 
       - name: Build MkDocs site
         run: |
