@@ -1,5 +1,6 @@
 name: Deploy MkDocs to GitHub Pages
-
+env:
+  GH_PAT: ${{ secrets.GH_PAGES_PAT }}
 on:
   push:
     branches:
@@ -31,5 +32,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # 公開用リポジトリ
-          REPO="https://x-access-token:${GITHUB_TOKEN}@github.com/Sofia-Luceat-Project/Sofia-Luceat-Project.github.io.git"
+          REPO="https://x-access-token:${GH_PAT}@github.com/Sofia-Luceat-Project/Sofia-Luceat-Project.github.io.git"
           ghp-import -n -p -f site -r $REPO -b main
