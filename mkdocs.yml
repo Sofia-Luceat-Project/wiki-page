@@ -2,6 +2,7 @@
 site_name: Sofia Luceat Project Wiki
 repo_url: https://github.com/orgs/Sofia-Luceat-Project/repositories
 repo_name: Sofia Luceat Project GitHub
+copyright: "© Sofia Luceat Project 2025"
 
 theme:
   name: material
