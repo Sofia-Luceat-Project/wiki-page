@@ -15,16 +15,16 @@ theme:
       primary: blue
       scheme: default
       toggle:
-          icon: material/brightness-7
-          name: Switch to dark mode
+        icon: material/brightness-7
+        name: Switch to dark mode
 
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       primary: blue grey
       scheme: slate
       toggle:
-          icon: material/brightness-4
-          name: Switch to light mode
+        icon: material/brightness-4
+        name: Switch to light mode
 # 使用するMarkdown拡張機能の設定
 markdown_extensions:
   - admonition
@@ -34,10 +34,12 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+          format:
+            !!python/name:pymdownx.superfences.fence_code_format # 追加のプラグイン設定
 
-# 追加のプラグイン設定
+
 plugins:
+  - glightbox
   - blog:
       post_date_format: full
       post_url_date_format: yyyy/MM/dd
